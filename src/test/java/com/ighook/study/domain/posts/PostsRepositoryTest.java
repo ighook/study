@@ -17,6 +17,7 @@ public class PostsRepositoryTest {
     @Autowired
     PostsRepository postsRepository;
 
+    // 테스트 후에 cleanup 함수를 실행
     @After
     public void cleanup() {
         postsRepository.deleteAll();
